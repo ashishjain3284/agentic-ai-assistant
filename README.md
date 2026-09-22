@@ -139,10 +139,7 @@ it-support-assistant/
 ├── .env.example              template for the API key
 ├── .gitignore                excludes .env and the generated database
 ├── requirements.txt
-├── README.md                 this file
-├── HOW_TO_DEMO.md            a five-minute demonstration script
-├── GIT_SETUP.md              step-by-step GitHub instructions
-└── SKILLS_CHECKLIST.md       the twelve assessed skills mapped to the code
+└── README.md                 this file
 ```
 
 Every module opens with a comment block explaining its job, and every function has a docstring.
@@ -155,8 +152,8 @@ Every module opens with a comment block explaining its job, and every function h
 
 ```bash
 # 1. Get the project
-git clone https://github.com/<your-username>/it-support-assistant.git
-cd it-support-assistant
+git clone https://github.com/ashishjain3284/agentic-ai-assistant.git
+# cd it-support-assistant
 
 # 2. (Recommended) create a virtual environment
 python -m venv .venv
