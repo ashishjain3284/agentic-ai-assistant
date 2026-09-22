@@ -1,0 +1,35 @@
+# GitHub Actions: run the tests automatically on every push.
+#
+# The suite never calls OpenAI, so no API key secret has to be configured for
+# this to work.
+
+name: Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out the code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run tests
+        run: pytest -v
+
+      - name: Check the app imports cleanly
+        run: python -c "import config, database, tools, prompts, agent; print('imports OK')"

@@ -1,0 +1,47 @@
+{
+  "last_checked": "2026-09-07T09:15:00",
+  "services": [
+    {
+      "service": "VPN Gateway",
+      "status": "Degraded",
+      "note": "Intermittent disconnects reported from the Bengaluru region since 08:40. Network team is investigating under INC-4471.",
+      "since": "2026-09-07T08:40:00"
+    },
+    {
+      "service": "Email (Exchange)",
+      "status": "Operational",
+      "note": "No known issues.",
+      "since": "2026-09-01T00:00:00"
+    },
+    {
+      "service": "Corporate Wi-Fi",
+      "status": "Operational",
+      "note": "No known issues.",
+      "since": "2026-08-28T00:00:00"
+    },
+    {
+      "service": "Shared Drive (nimbus-fs01)",
+      "status": "Operational",
+      "note": "Scheduled maintenance on Sunday 14 September, 02:00 to 04:00.",
+      "since": "2026-08-15T00:00:00"
+    },
+    {
+      "service": "HR Portal",
+      "status": "Operational",
+      "note": "No known issues.",
+      "since": "2026-07-30T00:00:00"
+    },
+    {
+      "service": "Printing (nimbus-print01)",
+      "status": "Outage",
+      "note": "Print server offline following a failed update. Engineers on site. Estimated restoration 13:00.",
+      "since": "2026-09-07T07:05:00"
+    },
+    {
+      "service": "Company Portal",
+      "status": "Operational",
+      "note": "No known issues.",
+      "since": "2026-08-11T00:00:00"
+    }
+  ]
+}

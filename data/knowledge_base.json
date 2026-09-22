@@ -1,0 +1,98 @@
+[
+  {
+    "id": "KB-001",
+    "title": "How to reset your VPN password",
+    "category": "VPN",
+    "tags": ["vpn", "password", "reset", "login", "credentials"],
+    "content": "Your VPN password is separate from your Windows password and expires every 90 days.\n1. Open https://selfservice.nimbustech.local from any browser on the corporate network or on your phone.\n2. Sign in with your employee ID and complete the multi-factor prompt.\n3. Choose 'VPN credentials' and then 'Reset password'.\n4. Enter a new password of at least 12 characters with one number and one symbol.\n5. Wait two minutes for the change to replicate, then reconnect the VPN client.\nIf the self-service portal is unreachable, raise a ticket with the Network team.",
+    "last_updated": "2026-06-14"
+  },
+  {
+    "id": "KB-002",
+    "title": "VPN connects but no internal systems are reachable",
+    "category": "VPN",
+    "tags": ["vpn", "connection", "network", "timeout", "split tunnel"],
+    "content": "This is usually a split-tunnel or DNS problem rather than a VPN fault.\n1. Disconnect the VPN, then reconnect and choose the 'Full tunnel' profile.\n2. Open a command prompt and run 'ipconfig /flushdns'.\n3. Confirm you can reach https://intranet.nimbustech.local.\n4. If you are on a home network using 192.168.1.x, change your router's LAN range to 192.168.20.x, as the corporate range conflicts with it.\nIf the problem persists on a different network, raise a ticket with the Network team and include the output of 'ipconfig /all'.",
+    "last_updated": "2026-05-02"
+  },
+  {
+    "id": "KB-003",
+    "title": "Laptop running slowly",
+    "category": "Hardware",
+    "tags": ["laptop", "slow", "performance", "memory", "startup"],
+    "content": "Before raising a ticket, please try the following.\n1. Restart the laptop. Sleep is not a substitute; devices should be restarted at least weekly.\n2. Open Task Manager and check the Startup tab. Disable anything you do not need at sign-in.\n3. Confirm free disk space is above 10 GB. Empty the Downloads folder and the Recycle Bin.\n4. Check that Windows Update is not running a large background installation.\nIf the device is still slow after a restart and has less than 16 GB of memory, it may be eligible for a hardware refresh. Raise a ticket with the End User Computing team.",
+    "last_updated": "2026-04-19"
+  },
+  {
+    "id": "KB-004",
+    "title": "Outlook is not receiving new email",
+    "category": "Email",
+    "tags": ["email", "outlook", "sync", "mailbox", "exchange"],
+    "content": "1. Check the status bar at the bottom of Outlook. If it reads 'Disconnected' or 'Trying to connect', the client has lost its connection to Exchange.\n2. Select Send/Receive, then 'Work Offline' to make sure offline mode is not enabled.\n3. Close Outlook completely and reopen it.\n4. Confirm your mailbox is not full: right-click your mailbox name, choose Data File Properties, then Folder Size. Mailboxes above 45 GB stop receiving mail.\n5. Verify the same mail is missing in Outlook on the web. If the web client shows the mail, the problem is with the desktop client only.\nIf mail is missing in both, raise a ticket with the Messaging team.",
+    "last_updated": "2026-07-08"
+  },
+  {
+    "id": "KB-005",
+    "title": "Setting up multi-factor authentication on a new phone",
+    "category": "Account",
+    "tags": ["mfa", "authenticator", "2fa", "phone", "security"],
+    "content": "If you have replaced your phone you must re-register the authenticator app.\n1. On a computer, open https://mfa.nimbustech.local and sign in with your employee ID.\n2. If you can still complete the old MFA prompt, choose 'Add device' and scan the QR code with the new phone.\n3. If you cannot complete the old prompt, you will need an identity check. Contact the Service Desk from a number listed in your HR profile, or ask your line manager to raise a ticket on your behalf.\nBackup codes are not issued by default. Request them from the Security team once your new device is registered.",
+    "last_updated": "2026-08-01"
+  },
+  {
+    "id": "KB-006",
+    "title": "Requesting software installation",
+    "category": "Software",
+    "tags": ["software", "install", "licence", "application", "request"],
+    "content": "Standard applications are available without approval from the Company Portal.\n1. Open the Company Portal application on your laptop.\n2. Search for the application and select Install.\nIf the application is not listed, it requires a licence request.\n1. Raise a ticket with the Software Asset team, category 'Software'.\n2. Include the application name, the version, the business justification and your cost centre.\nLicensed software typically takes three working days to approve. Do not install software from the internet; devices are blocked from doing so and attempts are logged.",
+    "last_updated": "2026-03-22"
+  },
+  {
+    "id": "KB-007",
+    "title": "Requesting access to a shared drive or folder",
+    "category": "Access",
+    "tags": ["shared drive", "folder", "permissions", "access", "network drive"],
+    "content": "Access to shared folders is granted by the folder owner, not by IT.\n1. Note the full path of the folder, for example \\\\nimbus-fs01\\finance\\reports.\n2. Raise a ticket with the Access Management team, category 'Access', and include the exact path and the reason for access.\n3. The request is routed to the data owner for approval. You will receive an email once approved.\nApprovals usually complete within two working days. Access to Finance and HR folders requires additional approval from the respective director.",
+    "last_updated": "2026-05-30"
+  },
+  {
+    "id": "KB-008",
+    "title": "Printer not responding or printing blank pages",
+    "category": "Hardware",
+    "tags": ["printer", "printing", "queue", "driver", "toner"],
+    "content": "1. Check the printer display for a physical error such as a paper jam or an empty toner cartridge.\n2. On your laptop, open Settings, then Printers and scanners, select the printer and choose 'Open print queue'. Cancel all stuck jobs.\n3. Restart the Print Spooler service, or simply restart the laptop.\n4. Remove the printer and add it again from \\\\nimbus-print01.\nIf the printer prints blank pages with toner installed, the drum unit may need replacing. Raise a ticket with the End User Computing team and include the printer's asset tag from the label on its front panel.",
+    "last_updated": "2026-02-11"
+  },
+  {
+    "id": "KB-009",
+    "title": "Connecting to Wi-Fi in the office and guest Wi-Fi for visitors",
+    "category": "Network",
+    "tags": ["wifi", "wireless", "guest", "network", "ssid"],
+    "content": "Employees should connect to the 'NIMBUS-CORP' network. It authenticates automatically using your device certificate; no password is required.\nIf 'NIMBUS-CORP' does not appear, the device certificate may have expired. Connect to the VPN over a personal hotspot for ten minutes to renew it, then try again.\nVisitors should use 'NIMBUS-GUEST'. Sponsor a visitor by opening the guest portal at https://guest.nimbustech.local and entering the visitor's name and email; a code is sent to them and is valid for 24 hours.",
+    "last_updated": "2026-06-27"
+  },
+  {
+    "id": "KB-010",
+    "title": "Video calls dropping or screen sharing not working",
+    "category": "Software",
+    "tags": ["teams", "video", "call", "screen share", "meeting", "camera"],
+    "content": "1. Check whether the problem occurs on both Wi-Fi and a wired connection. Video quality issues on Wi-Fi alone are usually a local network problem.\n2. Close other bandwidth-heavy applications, particularly cloud backup and file synchronisation clients.\n3. If screen sharing fails specifically, clear the client cache: close the application, delete the contents of %appdata%\\NimbusMeet\\Cache, and reopen it.\n4. If the camera is not detected, check the physical privacy shutter and confirm no other application is holding the camera.\nIf calls drop on a wired connection, raise a ticket with the Network team and include the meeting ID and the time of the drop.",
+    "last_updated": "2026-07-19"
+  },
+  {
+    "id": "KB-011",
+    "title": "New joiner IT setup checklist",
+    "category": "Onboarding",
+    "tags": ["new joiner", "onboarding", "setup", "starter", "account"],
+    "content": "A new joiner's IT setup is raised automatically by HR five working days before the start date. It covers the laptop build, the network account, the email mailbox, MFA registration and the standard application set.\nOn day one the joiner should:\n1. Sign in with the temporary password issued by their line manager and change it immediately.\n2. Register MFA at https://mfa.nimbustech.local.\n3. Open the Company Portal and install any team-specific applications.\nRole-specific access, such as finance systems or administrative rights, is not included and must be requested separately by the line manager.",
+    "last_updated": "2026-01-15"
+  },
+  {
+    "id": "KB-012",
+    "title": "Password policy and self-service password reset",
+    "category": "Account",
+    "tags": ["password", "policy", "expiry", "locked out", "reset"],
+    "content": "Windows passwords expire every 90 days and cannot repeat any of the last ten passwords. Accounts lock after five failed attempts and unlock automatically after 30 minutes.\nTo reset your own password, open https://selfservice.nimbustech.local and complete the MFA prompt. You must have registered MFA beforehand.\nIf you are locked out and cannot reach the portal, the Service Desk can unlock the account after an identity check. Password resets by the Service Desk are never done over chat or email; they require a voice call to a number held in your HR profile.",
+    "last_updated": "2026-08-20"
+  }
+]

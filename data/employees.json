@@ -1,0 +1,90 @@
+[
+  {
+    "employee_id": "EMP1024",
+    "name": "Priya Raghunathan",
+    "email": "priya.raghunathan@nimbustech.example",
+    "department": "Finance",
+    "job_title": "Financial Analyst",
+    "location": "Bengaluru",
+    "manager": "Anil Desai",
+    "device": "NIMB-LT-2291 (ThinkPad T14, 16 GB)",
+    "started": "2023-07-10"
+  },
+  {
+    "employee_id": "EMP1031",
+    "name": "Daniel Okoro",
+    "email": "daniel.okoro@nimbustech.example",
+    "department": "Sales",
+    "job_title": "Account Executive",
+    "location": "London",
+    "manager": "Helen Mbeki",
+    "device": "NIMB-LT-1877 (MacBook Pro 14, 16 GB)",
+    "started": "2021-03-01"
+  },
+  {
+    "employee_id": "EMP1052",
+    "name": "Meera Shah",
+    "email": "meera.shah@nimbustech.example",
+    "department": "Operations",
+    "job_title": "Operations Manager",
+    "location": "Pune",
+    "manager": "Rajesh Iyer",
+    "device": "NIMB-LT-2410 (ThinkPad T14, 32 GB)",
+    "started": "2019-11-18"
+  },
+  {
+    "employee_id": "EMP1067",
+    "name": "Thomas Berger",
+    "email": "thomas.berger@nimbustech.example",
+    "department": "Engineering",
+    "job_title": "Senior Developer",
+    "location": "Berlin",
+    "manager": "Sofia Lindqvist",
+    "device": "NIMB-LT-2033 (Dell XPS 15, 32 GB)",
+    "started": "2022-02-14"
+  },
+  {
+    "employee_id": "EMP1078",
+    "name": "Aisha Rahman",
+    "email": "aisha.rahman@nimbustech.example",
+    "department": "Human Resources",
+    "job_title": "HR Business Partner",
+    "location": "London",
+    "manager": "Grace Whitfield",
+    "device": "NIMB-LT-1954 (ThinkPad X1, 16 GB)",
+    "started": "2020-09-07"
+  },
+  {
+    "employee_id": "EMP1090",
+    "name": "Kenji Tanaka",
+    "email": "kenji.tanaka@nimbustech.example",
+    "department": "Engineering",
+    "job_title": "QA Engineer",
+    "location": "Tokyo",
+    "manager": "Sofia Lindqvist",
+    "device": "NIMB-LT-2508 (ThinkPad T14, 16 GB)",
+    "started": "2024-05-20"
+  },
+  {
+    "employee_id": "EMP1103",
+    "name": "Lucia Moretti",
+    "email": "lucia.moretti@nimbustech.example",
+    "department": "Marketing",
+    "job_title": "Content Lead",
+    "location": "Milan",
+    "manager": "Helen Mbeki",
+    "device": "NIMB-LT-2145 (MacBook Air 13, 16 GB)",
+    "started": "2023-01-09"
+  },
+  {
+    "employee_id": "EMP1118",
+    "name": "Samuel Whitfield",
+    "email": "samuel.whitfield@nimbustech.example",
+    "department": "Finance",
+    "job_title": "Accounts Payable Clerk",
+    "location": "Bengaluru",
+    "manager": "Anil Desai",
+    "device": "NIMB-LT-2602 (ThinkPad E14, 8 GB)",
+    "started": "2025-06-02"
+  }
+]
